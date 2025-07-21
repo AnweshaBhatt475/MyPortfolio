@@ -67,7 +67,7 @@ const Work = () => {
       {/* Modal Container */}
       {selectedProject && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 p-4">
-          <div className="bg-gray-900 rounded-xl shadow-2xl lg:w-full w-[90%] max-w-3xl overflow-hidden relative">
+          <div className="bg-gray-900 rounded-xl shadow-2xl lg:w-full w-[90%] max-w-3xl overflow-y-auto max-h-[80vh] overflow-hidden relative">
             <div className="flex justify-end p-4">
               <button
                 onClick={handleCloseModal}
@@ -102,20 +102,43 @@ const Work = () => {
                     </span>
                   ))}
                 </div>
-                <div className="flex gap-4">
-                  <a
-                    href={selectedProject.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-1/2 bg-gray-800 hover:bg-purple-800 text-gray-400 lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm font-semibold text-center"
-                  >
-                    View Code
-                  </a>
+
+                {/* GitHub + Live Buttons */}
+                <div className="flex flex-wrap gap-4">
+                  {typeof selectedProject.github === 'object' ? (
+                    <>
+                      <a
+                        href={selectedProject.github.frontend}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 bg-gray-800 hover:bg-purple-800 text-gray-400 lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm font-semibold text-center"
+                      >
+                        Frontend Code
+                      </a>
+                      <a
+                        href={selectedProject.github.backend}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 bg-gray-800 hover:bg-purple-800 text-gray-400 lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm font-semibold text-center"
+                      >
+                        Backend Code
+                      </a>
+                    </>
+                  ) : (
+                    <a
+                      href={selectedProject.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-1/2 bg-gray-800 hover:bg-purple-800 text-gray-400 lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm font-semibold text-center"
+                    >
+                      View Code
+                    </a>
+                  )}
                   <a
                     href={selectedProject.webapp}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-1/2 bg-purple-600 hover:bg-purple-800 text-white lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm font-semibold text-center"
+                    className="flex-1 bg-purple-600 hover:bg-purple-800 text-white lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm font-semibold text-center"
                   >
                     View Live
                   </a>

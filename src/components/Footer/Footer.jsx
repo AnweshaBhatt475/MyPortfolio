@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaYoutube, FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   // Smooth scroll function
@@ -14,7 +14,7 @@ const Footer = () => {
     <footer className="text-white py-8 px-[12vw] md:px-[7vw] lg:px-[20vw]">
       <div className="container mx-auto text-center">
         {/* Name / Logo */}
-        <h2 className="text-xl font-semibold text-purple-500">Sakshi Agnihotri</h2>
+        <h2 className="text-xl font-semibold text-purple-500">Anwesha Bhatt</h2>
 
         {/* Navigation Links - Responsive */}
         <nav className="flex flex-wrap justify-center space-x-4 sm:space-x-6 mt-4">
@@ -40,8 +40,8 @@ const Footer = () => {
           {[
             // { icon: <FaFacebook />, link: "https://www.facebook.com/tarun.kaushik.3511041/" },
             // { icon: <FaTwitter />, link: "https://twitter.com/CodingMaster6?s=09" },
-            { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/sakshi-agnihotri-64613a263" },
-            // { icon: <FaInstagram />, link: "https://www.instagram.com/coding_.master/" },
+            { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/anwesha-bhatt-4228a3245" },
+            { icon: <FaGithub/>, link: "https://github.com/AnweshaBhatt475/" },
             // { icon: <FaYoutube />, link: "https://www.youtube.com/codingmasteryt" },
             
           ].map((item, index) => (
@@ -59,7 +59,7 @@ const Footer = () => {
 
         {/* Copyright Text */}
         <p className="text-sm text-gray-400 mt-6">
-          © 2025 Sakshi Agnihotri. All rights reserved.
+         © 2025 Anwesha Bhatt. Every word and pixel reserved.
         </p>
       </div>
     </footer>

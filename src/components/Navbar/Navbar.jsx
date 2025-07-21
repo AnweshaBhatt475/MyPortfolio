@@ -46,9 +46,9 @@ const Navbar = () => {
         {/* Logo */}
         <div className="text-lg font-semibold cursor-pointer">
           <span className="text-[#8245ec]">&lt;</span>
-          <span className="text-white">Sakshi</span>
+          <span className="text-white">Anwesha </span>
           {/* <span className="text-[#8245ec]">/</span> */}
-          <span className="text-white">Agnihotri</span>
+          <span className="text-white">Bhatt</span>
           <span className="text-[#8245ec]">&gt;</span>
         </div>
 
@@ -71,7 +71,7 @@ const Navbar = () => {
         {/* Social Icons */}
         <div className="hidden md:flex space-x-4">
           <a
-            href="https://github.com/Sakshi123-tech"
+            href="https://github.com/AnweshaBhatt475"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-[#8245ec]"
@@ -79,7 +79,7 @@ const Navbar = () => {
             <FaGithub size={24} />
           </a>
           <a
-            href="https://www.linkedin.com/in/sakshi-agnihotri-64613a263"
+            href="https://www.linkedin.com/in/anwesha-bhatt-4228a3245"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-[#8245ec]"
@@ -122,7 +122,7 @@ const Navbar = () => {
             ))}
             <div className="flex space-x-4">
               <a
-                href="https://github.com/codingmastr"
+                href="https://github.com/AnweshaBhatt475"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white"
@@ -130,7 +130,7 @@ const Navbar = () => {
                 <FaGithub size={24} />
               </a>
               <a
-                href="https://www.linkedin.com/in/tarun-kaushik-553b441a4"
+                href="https://www.linkedin.com/in/anwesha-bhatt-4228a3245"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white"

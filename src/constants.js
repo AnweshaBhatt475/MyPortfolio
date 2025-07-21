@@ -42,18 +42,18 @@ import newtonschoolLogo from './assets/company_logo/newtonschool_logo.png';
 // Education Section Logo's
 // import glaLogo from './assets/education_logo/gla_logo.png';
 import College from './assets/education_logo/College.jpg';
-import School from './assets/education_logo/School.jpeg';
+import School from './assets/education_logo/school.png';
 
 // Project Section Logo's
 import insta from './assets/work_logo/instagram.jpg';
-import recipe from './assets/work_logo/Recipyfinder.jpg';
+import recipe from './assets/work_logo/RecipeApp.png';
 import movierecLogo from './assets/work_logo/movie_rec.png';
 import expensetracker from './assets/work_logo/ExpenseTracker.jpg';
-import valentine from './assets/work_logo/Valentineday.jpg';
+import valentine from './assets/work_logo/valentine.png';
 import ecommercewebsite from './assets/work_logo/ecommercewebsite.jpg';
-import zepto from './assets/work_logo/10MinZepto.jpg';
+//import chatapp from './assets/work_logo/chatpp.jpg';
 import heartcare from './assets/work_logo/Hearcare.jpg';
-import passwordmanager from './assets/work_logo/Passwordmanager.jpg';
+import chatapp from './assets/work_logo/chatapp.jpg';
 
 
 export const SkillsInfo = [
@@ -78,8 +78,7 @@ export const SkillsInfo = [
     title: 'DataBase',
     skills: [
       // { name: 'Springboot', logo: springbootLogo },
-      { name: 'Node JS', logo: nodejsLogo },
-       { name: 'Express JS', logo: expressjsLogo },
+      
       { name: 'MySQL', logo: mysqlLogo },
       { name: 'MongoDB', logo: mongodbLogo },
       // { name: 'Firebase', logo: firebaseLogo },
@@ -89,13 +88,16 @@ export const SkillsInfo = [
   {
     title: 'Languages',
     skills: [
-      { name: 'C', logo: cLogo },
-      // { name: 'C++', logo: cppLogo },
-      // { name: 'Java', logo: javaLogo },
-      { name: 'Python', logo: pythonLogo },
+      
       // { name: 'C-Sharp', logo: csharpLogo },
       { name: 'JavaScript', logo: javascriptLogo },
       // { name: 'TypeScript', logo: typescriptLogo },
+      { name: 'Node JS', logo: nodejsLogo },
+       { name: 'Express JS', logo: expressjsLogo },
+       { name: 'C', logo: cLogo },
+      // { name: 'C++', logo: cppLogo },
+      // { name: 'Java', logo: javaLogo },
+      { name: 'Python', logo: pythonLogo },
     ],
   },
   {
@@ -108,28 +110,33 @@ export const SkillsInfo = [
       // { name: 'Compass', logo: mcLogo },
       { name: 'Vercel', logo: vercelLogo },
        { name: 'Netlify', logo: netlifyLogo },
+       
+
       // { name: 'Figma', logo: figmaLogo },
     ],
   },
 ];
 
   export const experiences = [
-    {
-      id: 0,
-      img: Techpile,
-      role: "Fullstack Developer As a Trainer",
-      company: "Techpile Technology Pvt Ltd.",
-      date: "july 2023 - september 2023",
-      desc: "Developed dynamic and scalable web applications using the MERN stack, handling both frontend and backend development. Collaborated with cross-functional teams to build responsive UI, implement RESTful APIs, and optimize application performance in an agile environment.",
-      skills: [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "Django Pyhton",
-        "CSS",
-        
-      ],
-    },
+   {
+  id: 0,
+  img: Techpile,
+  role: "Python Full Stack Summer Trainee",
+  company: "Techpile Technology Pvt. Ltd.",
+  date: "July 2023 – September 2023",
+  desc: "Completed an intensive full stack development internship focused on Python and Django. Developed a Blinkit clone project, implementing real-time product listings, cart management, user authentication, and order functionality. Gained hands-on experience in building scalable web apps using Django, REST APIs, and frontend technologies.",
+  skills: [
+    "Python",
+    "Django",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "SQLite",
+    "REST API",
+    "Bootstrap"
+  ]
+}
+,
     
   ];
   
@@ -147,63 +154,76 @@ export const SkillsInfo = [
       id: 1,
       img: College,
       school: "M.G.Institute of Management and Technology",
-      date: "August 2020-june 2024",
-      grade: "8.36 Cgpa",
-      desc: "I completed my Bachelor's degree in Computer Science and Engineering  from M.G.I.M.T. College, Lucknow. Throughout my studies, I was immersed in a variety of subjects that deepened my understanding of computing and technology. From exploring Data Structures and Algorithms to diving into Web Development and Database Management Systems, I gained practical insights into the world of software development. My time at M.G.I.M.T. College allowed me to work on projects that applied theoretical concepts to real-world problems.",
-      degree: "Bachelor of  Computer Science  and Engineering",
+      date: "August 2020-july 2024",
+      grade: "8.69 Cgpa",
+      desc: "Earned a Bachelor's degree in Computer Science and Engineering from M.G.I.M.T. College, Lucknow. The program provided a strong foundation in core computing concepts, including Data Structures, Algorithms, Web Development, and Database Management Systems. Gained hands-on experience through academic projects that applied theoretical knowledge to real-world scenarios, strengthening my problem-solving and development skills.",
+degree: "Bachelor of Technology in Computer Science and Engineering",
+
     },
     {
       id: 2,
       img: School,
-      school: "Shri Janki Prasad Inter College Patseni Kachhauna Hardoi",
-      date: "Apr 2018 - March 2020",
-      grade: "70%",
-      desc: "I completed my class 12 education from Shri Janki Prasad Inter College Patseni Kachhauna Hardoi, where I studied Physics, Chemistry, and Mathematics (PCM) with Computer Science.",
-      degree: "U.P.Board(XII) - PCM with Computer Science",
+      school: "Banshi Chand Inter College , Chilwa Gorakhpur",
+      date: "Apr 2019 - March 2020",
+      grade: "74%",
+      desc: "Completed my Class 12 education from Banshi Chand Inter College, Chilwa, Gorakhpur, with a focus on Physics, Chemistry, and Mathematics (PCM), along with Computer Science. This academic foundation sparked my interest in technology and problem-solving.",
+degree: "U.P. Board (XII) – PCM with Computer Science",
+
     },
     {
       id: 3,
       img: School,
-      school: "Shri Janki Prasad Inter College Patseni Kachhauna Hardoi",
-      date: "Apr 2016 - March 2018",
-      grade: "75%",
-      desc: "I completed my class 10 education from Shri Janki Prasad Inter College Patseni Kachhauna Hardoi, where I studied Science with Computer.",
-      degree: "U.P.Board(X), Science with Computer Application",
+      school: "Banshi Chand Inter College , Chilwa Gorakhpur",
+      date: "Apr 2017- March 2018",
+      grade: "82.5%",
+      desc: "Completed my Class 10 education from Banshi Chand Inter College, Chilwa, Gorakhpur, with a focus on Science and Computer Applications. This early exposure to technology laid the groundwork for my interest in software and systems.",
+degree: "U.P. Board (X) – Science with Computer Application",
+
     },
   ];
   
   export const projects = [
-        {
-      id: 0,
-      title: "Full Stack Blinkit Website",
-      description:
-         "A high-performance full-stack grocery delivery application inspired by Blinkit, built entirely on the MERN stack: MongoDB, Express.js, React, and Node.js.",
-      image: blinkitwebsite,
-      tags: ["HTML", "TailWind CSS", "JavaScript", "React JS", "API","MongoDb","Expressjs","Node js"],
-      github: "https://github.com/Sakshi123-tech/binkitFullstackBackend",
-      webapp: "https://blinkitwebsite.onrender.com/",
-    },
+       {
+  id: 0,
+  title: "BlinkBasket",
+  description: "Blink Basket is a feature-rich, high-performance grocery delivery web application inspired by Blinkit. Built using the MERN stack (MongoDB, Express.js, React, Node.js), it offers real-time product listings, cart management, user authentication, and a seamless shopping experience from browse to checkout.",
+  image: blinkitwebsite,
+  tags: ["HTML", "TailWind CSS", "JavaScript", "React JS", "API", "MongoDb", "Expressjs", "Node js"],
+  github: {
+    frontend: "https://github.com/AnweshaBhatt475/BlinkBasket.git",
+    backend: "https://github.com/AnweshaBhatt475/BlinkBasket-Backend.git"
+  },
+  webapp: "https://blinkbasket-eight.vercel.app/",
+},
 
     {
-      id: 1,
-      title: "Instagram Clone Full stack",
-      description:
-         "An Instagram Clone is a full-stack social media application that allows users to log in, create posts, like, comment, and interact with other users in a responsive and engaging interface",
-      image: insta,
-      tags: ["HTML", "TailWind CSS", "JavaScript", "React JS", "API"],
-      github: "https://github.com/Sakshi123-tech/Insta_backend_code",
-      webapp: "https://instagram-website-j8gw.onrender.com/",
-    },
+  id: 1,
+  title: "InstaSphere – Social Media Platform",
+  description:
+    "A responsive and interactive full-stack Instagram Clone built with React and Node.js. Features include user authentication, photo uploads, likes, comments, and profile management—delivering a real-time social media experience.",
+  image: insta,
+  tags: ["HTML", "Tailwind CSS", "JavaScript", "React JS", "Node.js", "Express", "MongoDB"],
+  github: {
+    frontend: "https://github.com/AnweshaBhatt475/InstagramClone-frontend",
+    backend: "https://github.com/AnweshaBhatt475/InstagramBackend"
+  },
+  webapp: "https://instagramclonewebsite.onrender.com/login"
+}
+,
     {
-      id: 2,
-      title: "Recipe Finder Website",
-      description:
-        "The Recipe Finder website is a dynamic platform that helps users discover and explore recipes based on ingredients they have. It simplifies meal planning by offering tailored recipe suggestions.",
-      image: recipe,
-      tags: ["React JS", "HTML", "CSS", "JavaScript"],
-      github: "https://github.com/Sakshi123-tech/Recipe-finder-website/tree/master",
-      webapp: "https://recipe-app-five-topaz.vercel.app/",
-    },
+  id: 2,
+  title: "Chat App – Real-Time Messaging Platform",
+  description:
+    "A full-stack real-time chat application with support for personal messaging, media sharing (image, video, audio), and online presence indicators. Built using the MERN stack with Socket.IO for seamless communication.",
+  image: chatapp, // replace with actual image import variable
+  tags: ["React JS", "Tailwind CSS", "Node.js", "Express", "MongoDB", "Socket.IO"],
+  github: {
+    frontend: "https://github.com/AnweshaBhatt475/ChatApp",
+    backend: "https://github.com/AnweshaBhatt475/ChatApp-Backend-code"
+  },
+  webapp: "https://chat-app-pi-nine-97.vercel.app/"
+}
+,
     // {
     //   id: 2,
     //   title: "Movie Recommendation App",
@@ -214,64 +234,78 @@ export const SkillsInfo = [
     //   github: "https://github.com/codingmastr/Movie-Recommendation-App",
     //   webapp: "https://movie-recommendation-app-jet.vercel.app/",
     // },
+    
+   {
+  id: 3,
+  title: "ValentineConnect – Personalized Celebration Platform",
+  description:
+    "ValentineConnect is a themed web application designed to create and share personalized Valentine’s Day messages and milestones. Developed with React, it provides an elegant interface for users to celebrate relationships through interactive and visually appealing experiences.",
+  image: valentine, // make sure valentine is imported correctly
+  tags: ["React JS", "HTML", "CSS", "JavaScript"],
+  github: {
+    frontend: "https://github.com/AnweshaBhatt475/ValentineApp",
+    alt: "https://github.com/AnweshaBhatt475/ValentineApp"
+  },
+  webapp: "https://valentine-app-sable.vercel.app/"
+},
     {
-      id: 3,
-      title: "Valentine Day web Page",
-      description:
-        "The Valentine's Day Special Website is a personalized web experience designed to celebrate love and togetherness. It allows users to create and share heartfelt messages, relationship milestones, and special moments in a beautifully themed interface.",
-      image: valentine,
-      tags: ["React JS", "CSS", "Html","Javascript"],
-      github: "https://github.com/Sakshi123-tech/velentineform",
-      webapp: "https://sprightly-paletas-d76b7d.netlify.app/",
-    },
+  id: 4,
+  title: "FinTrack – Smart Finance Tracker",
+  description:
+    "FinTrack is a smart web application designed to help users manage and track their finances efficiently. It allows users to log income and expenses, categorize transactions, and visualize spending patterns through interactive charts.",
+  image: expensetracker, 
+  tags: ["JavaScript", "React JS", "HTML", "CSS"],
+  github: {
+    frontend: "https://github.com/AnweshaBhatt475/FinTrack-.git",
+    alt: "https://github.com/AnweshaBhatt475/FinTrack-.git"
+  },
+  webapp: "https://euphonious-madeleine-c71886.netlify.app/"
+},
     {
-      id: 4,
-      title: "Expense Tracker",
-      description:
-        "The Expense Tracker is a web application designed to help users manage and track their finances efficiently. It allows users to log expenses, categorize transactions, and visualize spending patterns.",
-      image: expensetracker,
-      tags: ["JavaScript", "Reactjs", "HTML", "CSS"],
-      github: "https://github.com/Sakshi123-tech/expensetracker",
-      webapp: "https://euphonious-madeleine-c71886.netlify.app/",
-    },
-    {
-      id: 5,
-      title: "Ecommerce Website",
-      description:
-        "The E-commerce Website is a dynamic online shopping platform that allows users to browse, purchase, and manage orders seamlessly. It offers a modern shopping experience with secure transactions and a user-friendly interface..",
-      image: ecommercewebsite,
-      tags: ["HTML", "CSS", "JavaScript", "React JS"],
-      github: "https://github.com/Sakshi123-tech/Ecommerceusingreact",
-      webapp: "https://dazzling-shortbread-3d3f4d.netlify.app/",
-    },
-    {
-      id: 6,
-      title: "10 Min Zepto",
-      description:
-        "The 10-Min Zepto is a rapid delivery e-commerce platform that enables users to order groceries and essentials with guaranteed delivery within 10 minutes. This project integrates real-time order processing, inventory management, and location-based logistics.",
-      image: zepto,
-      tags: ["Html","CSS","Javascript", "My Sql", "Python", "Django"],
-      github: "https://github.com/Sakshi123-tech/blinkit",
-      webapp: "https://codingmasterweb.in/",
-    },
-    {
-      id: 7,
-      title: "Heart Care Website",
-      description:
-        "The Heart Care Website is a comprehensive healthcare platform designed to provide users with vital heart health information, appointment scheduling, and emergency assistance. It integrates real-time monitoring, doctor consultations, and personalized health recommendations to promote cardiovascular wellness.",
-      image: heartcare,
-      tags: ["Html","CSS","Javascript", "My Sql", "Python", "Django"],
-      github: "https://github.com/Sakshi123-tech/healthcare",
-      webapp: "https://imagsearch.netlify.app/",
-    },
-    {
-      id: 8,
-      title: "Password Manager",
-      description:
-        "The Password Manager is a secure web application designed to help users store, manage, and retrieve passwords safely. It ensures encrypted storage, allowing users to access their credentials anytime while maintaining security.",
-      image: passwordmanager,
-      tags: ["React JS","HTML", "CSS", "Javascript"],
-      github: "https://github.com/Sakshi123-tech/password-manager",
-      webapp: "https://removeyourbg.netlify.app/",
-    },
+  id: 5,
+  title: "FlavorFind – Smart Recipe Discovery App",
+  description:
+    "FlavorFind is an intuitive web application that helps users discover recipes based on available ingredients. Built with React, it enhances meal planning by delivering tailored recipe suggestions in a clean, user-friendly interface.",
+  image: recipe, // make sure 'recipe' is imported correctly
+  tags
+  : ["React JS", "HTML", "CSS", "JavaScript", "API"],
+  github: "https://github.com/AnweshaBhatt475/RecipeApp",
+  webapp: "https://recipe-app-five-topaz.vercel.app/"
+}
+,
+    // {
+    //   id: 6,
+    //   title: "10 Min Zepto",
+    //   description:
+    //     "The 10-Min Zepto is a rapid delivery e-commerce platform that enables users to order groceries and essentials with guaranteed delivery within 10 minutes. This project integrates real-time order processing, inventory management, and location-based logistics.",
+    //   image: zepto,
+    //   tags: ["Html","CSS","Javascript", "My Sql", "Python", "Django"],
+    //   github: "https://github.com/Sakshi123-tech/blinkit",
+    //   webapp: "https://codingmasterweb.in/",
+    // },
+    // {
+      {
+  id: 7,
+  title: "Heart Care Website",
+  description:
+    "The Heart Care Website is a comprehensive healthcare platform designed to provide users with vital heart health information, appointment scheduling, and emergency assistance. It integrates real-time monitoring, doctor consultations, and personalized health recommendations to promote cardiovascular wellness.",
+  image: heartcare, // make sure 'heartcare' is imported correctly
+  tags: ["HTML", "CSS", "JavaScript", "MySQL", "Python", "Django"],
+  github: {
+    frontend: "https://github.com/AnweshaBhatt475/HospitalManagementsSystem.git",
+    alt: "https://github.com/AnweshaBhatt475/HospitalManagementsSystem.git"
+  },
+  webapp: "https://github.com/AnweshaBhatt475/HospitalManagementsSystem.git"
+}
+,
+    // {
+    //   id: 8,
+    //   title: "Password Manager",
+    //   description:
+    //     "The Password Manager is a secure web application designed to help users store, manage, and retrieve passwords safely. It ensures encrypted storage, allowing users to access their credentials anytime while maintaining security.",
+    //   image: passwordmanager,
+    //   tags: ["React JS","HTML", "CSS", "Javascript"],
+    //   github: "https://github.com/Sakshi123-tech/password-manager",
+    //   webapp: "https://removeyourbg.netlify.app/",
+    // },
   ];  

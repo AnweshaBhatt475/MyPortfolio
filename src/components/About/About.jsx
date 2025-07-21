@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactTypingEffect from 'react-typing-effect';
 import Tilt from 'react-parallax-tilt';
-import profileImage from '../../assets/profile2.jpg';
+import profileImage from '../../assets/profilePic.jpg';
 
 const About = () => {
   return (
@@ -18,17 +18,21 @@ const About = () => {
           </h1>
           {/* Name */}
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 leading-tight">
-            Sakshi Agnihotri
+            Anwesha Bhatt
           </h2>
           {/* Skills Heading with Typing Effect */}
           <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 text-[#8245ec] leading-tight">
             <span className="text-white">I am a </span>
             <ReactTypingEffect
               text={[
-                'Fullstack Developer',
+                'MERN Stack Developer',
+                'Full-Stack Engineer | MERN & Django Frameworks',
+                'Backend-Focused Full-Stack Developer | Node.js & Django APIs',
+
                 // 'App Developer',
                 // 'UI/UX Designer',
-                'Coder',
+                'Builder of Full-Stack Web Experiences',
+                'Full-Stack JavaScript Developer'
               ]}
               speed={100}
               eraseSpeed={50}
@@ -40,20 +44,19 @@ const About = () => {
             />
           </h3>
           {/* About Me Paragraph */}
-          <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed">
-            I am a frontend Developer. Skilled in both front-end and
-            back-end development, I specialize in the MERN stack and other
-            modern technologies to create seamless user experiences and
-            efficient solutions.
-          </p>
+         <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed">
+  I’m a MERN Stack Developer with experience in building full-stack web applications using MongoDB, Express.js, React.js, and Node.js. I focus on creating responsive, scalable interfaces backed by secure and efficient backend systems. With additional knowledge of Python and Django, I can work across diverse tech stacks to deliver dynamic and high-performing web solutions.
+</p>
+
           {/* Resume Button */}
           <a
-            href="https://drive.google.com/file/d/1KYq_nTMxcXFF09hjGhaCuTdescquAtJf/view"
+            href="https://drive.google.com/file/d/121fPdtiOx2nVkOKAzV7uOd8GU_LPZ-Hx/view?usp=drivesdk"
+
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
             style={{
-              background: 'linear-gradient(90deg, #8245ec, #a855f7)',
+              background: 'linear-gradient(90deg,rgb(161, 69, 236), #a855f7)',
               boxShadow: '0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec',
             }}
           >
@@ -74,7 +77,7 @@ const About = () => {
           >
             <img
               src={profileImage}
-              alt="Tarun Kaushik"
+              alt="Anwesha Bhatt"
               className="w-full h-full rounded-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)]"
             />
           </Tilt>
