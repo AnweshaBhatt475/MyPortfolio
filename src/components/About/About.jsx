@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactTypingEffect from 'react-typing-effect';
 import Tilt from 'react-parallax-tilt';
-import profileImage from '../../assets/ProfilePic.jpg';
+import profileImage from '../../assets/image.png';
 
 const About = () => {
   return (
@@ -25,14 +25,12 @@ const About = () => {
             <span className="text-white">I am a </span>
             <ReactTypingEffect
               text={[
-                'MERN Stack Developer',
-                'Full-Stack Engineer | MERN & Django Frameworks',
-                'Backend-Focused Full-Stack Developer | Node.js & Django APIs',
-
-                // 'App Developer',
-                // 'UI/UX Designer',
-                'Builder of Full-Stack Web Experiences',
-                'Full-Stack JavaScript Developer'
+                'Software Development Engineer – Full Stack',
+                'Java (JAX-RS) & React.js Developer',
+                'Production Engineer | 12,000+ Users Served',
+                'Cloud-Integrated Full-Stack Developer',
+                'MERN Stack & PostgreSQL Specialist',
+                'Builder of Scalable Real-Time Applications',
               ]}
               speed={100}
               eraseSpeed={50}
@@ -44,24 +42,51 @@ const About = () => {
             />
           </h3>
           {/* About Me Paragraph */}
-         <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed">
-  I’m a MERN Stack Developer with experience in building full-stack web applications using MongoDB, Express.js, React.js, and Node.js. I focus on creating responsive, scalable interfaces backed by secure and efficient backend systems. With additional knowledge of Python and Django, I can work across diverse tech stacks to deliver dynamic and high-performing web solutions.
-</p>
+         <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-6 mt-8 leading-relaxed">
+            Full-Stack SDE at Innostax Software Labs with 1+ year of production experience building insurance platforms using Java (JAX-RS), React.js, Node.js, and PostgreSQL. I deliver measurable impact — 30% faster backend performance, 25% reduced page load times — and have built SMS/MMS & email notification pipelines via Telnyx, AWS SES, SNS, Lambda, and S3 for 12,000+ users.
+          </p>
 
-          {/* Resume Button */}
-          <a
-            href="https://drive.google.com/file/d/121fPdtiOx2nVkOKAzV7uOd8GU_LPZ-Hx/view?usp=drivesdk"
+          {/* Impact stats */}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
+            {[
+              { value: '1+ Yrs', label: 'Experience' },
+              { value: '12K+', label: 'Users Served' },
+              { value: '30%', label: 'Perf. Boost' },
+              { value: '25%', label: 'Faster Loads' },
+            ].map((stat) => (
+              <div
+                key={stat.label}
+                className="rounded-xl border border-purple-500/30 bg-purple-950/20 px-3 py-3 text-center"
+              >
+                <p className="text-lg sm:text-xl font-bold text-[#c084fc]">{stat.value}</p>
+                <p className="text-[10px] sm:text-xs text-gray-400 mt-1">{stat.label}</p>
+              </div>
+            ))}
+          </div>
 
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
-            style={{
-              background: 'linear-gradient(90deg,rgb(161, 69, 236), #a855f7)',
-              boxShadow: '0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec',
-            }}
-          >
-            DOWNLOAD CV
-          </a>
+          {/* CTA Buttons */}
+          <div className="flex flex-wrap gap-4 justify-center md:justify-start">
+            <a
+              href="https://drive.google.com/file/d/1G2Cj4nXAgbxA_CCwRilH-t0D1baSS2Ax/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block text-white py-3 px-8 rounded-full text-lg font-bold transition duration-300 transform hover:scale-105"
+              style={{
+                background: 'linear-gradient(90deg,rgb(161, 69, 236), #a855f7)',
+                boxShadow: '0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec',
+              }}
+            >
+              DOWNLOAD CV
+            </a>
+            <a
+              href="https://www.linkedin.com/in/anwesha-bhatt"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block text-white py-3 px-8 rounded-full text-lg font-semibold border-2 border-[#8245ec] hover:bg-[#8245ec]/10 transition duration-300 transform hover:scale-105"
+            >
+              VIEW LINKEDIN
+            </a>
+          </div>
           
         </div>
         {/* Right Side */}

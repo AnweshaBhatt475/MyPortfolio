@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -79,12 +80,20 @@ const Navbar = () => {
             <FaGithub size={24} />
           </a>
           <a
-            href="https://www.linkedin.com/in/anwesha-bhatt-4228a3245"
+            href="https://www.linkedin.com/in/anwesha-bhatt"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-[#8245ec]"
           >
             <FaLinkedin size={24} />
+          </a>
+          <a
+            href="https://leetcode.com/u/anwesha_bhatt/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-[#8245ec]"
+          >
+            <SiLeetcode size={24} />
           </a>
         </div>
 
@@ -130,12 +139,20 @@ const Navbar = () => {
                 <FaGithub size={24} />
               </a>
               <a
-                href="https://www.linkedin.com/in/anwesha-bhatt-4228a3245"
+                href="https://www.linkedin.com/in/anwesha-bhatt"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white"
               >
                 <FaLinkedin size={24} />
+              </a>
+              <a
+                href="https://leetcode.com/u/anwesha_bhatt/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-white"
+              >
+                <SiLeetcode size={24} />
               </a>
             </div>
           </ul>

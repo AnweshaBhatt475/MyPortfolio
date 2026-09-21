@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaYoutube, FaGithub } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 
 const Footer = () => {
   // Smooth scroll function
@@ -40,7 +41,8 @@ const Footer = () => {
           {[
             // { icon: <FaFacebook />, link: "https://www.facebook.com/tarun.kaushik.3511041/" },
             // { icon: <FaTwitter />, link: "https://twitter.com/CodingMaster6?s=09" },
-            { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/anwesha-bhatt-4228a3245" },
+            { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/anwesha-bhatt" },
+            { icon: <SiLeetcode />, link: "https://leetcode.com/u/anwesha_bhatt/" },
             { icon: <FaGithub/>, link: "https://github.com/AnweshaBhatt475/" },
             // { icon: <FaYoutube />, link: "https://www.youtube.com/codingmasteryt" },
             
@@ -59,7 +61,7 @@ const Footer = () => {
 
         {/* Copyright Text */}
         <p className="text-sm text-gray-400 mt-6">
-         © 2025 Anwesha Bhatt. Every word and pixel reserved.
+         © 2026 Anwesha Bhatt. Every word and pixel reserved.
         </p>
       </div>
     </footer>

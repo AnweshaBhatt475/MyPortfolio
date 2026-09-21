@@ -33,11 +33,27 @@ import vercelLogo from './assets/tech_logo/vercel.png';
 import postgreLogo from './assets/tech_logo/postgre.png';
 import csharpLogo from './assets/tech_logo/csharp.png';
 import blinkitwebsite from './assets/tech_logo/Blinkitwebsite.jpg'
+import webhookLogo from './assets/tech_logo/webhook.png';
+import telnyxLogo from './assets/tech_logo/telnyx.png';
+import awsSesLogo from './assets/tech_logo/awsses.png';
+import awsSnsLogo from './assets/tech_logo/awssns.png';
+import awsLambdaLogo from './assets/tech_logo/lambda.png';
+import awsS3Logo from './assets/tech_logo/awss3.png';
 
 // Experience Section Logo's
 import Techpile from './assets/company_logo/Techpile.jpg';
+import innostaxLogo from './assets/company_logo/image.png';
 import agcLogo from './assets/company_logo/agc_logo.png';
 import newtonschoolLogo from './assets/company_logo/newtonschool_logo.png';
+
+// CDN logos for additional skills
+const dockerLogo = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg';
+const awsLogo = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg';
+const djangoLogo = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg';
+const jwtLogo = 'https://cdn.simpleicons.org/jsonwebtokens/FFFFFF';
+const socketioLogo = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg';
+const websocketLogo = 'https://cdn.simpleicons.org/socketdotio/FFFFFF';
+const intellijLogo = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg';
 
 // Education Section Logo's
 // import glaLogo from './assets/education_logo/gla_logo.png';
@@ -82,7 +98,7 @@ export const SkillsInfo = [
       { name: 'MySQL', logo: mysqlLogo },
       { name: 'MongoDB', logo: mongodbLogo },
       // { name: 'Firebase', logo: firebaseLogo },
-      // { name: 'PostgreSQL', logo: postgreLogo },
+      { name: 'PostgreSQL', logo: postgreLogo },
     ],
   },
   {
@@ -96,7 +112,7 @@ export const SkillsInfo = [
        { name: 'Express JS', logo: expressjsLogo },
        { name: 'C', logo: cLogo },
       // { name: 'C++', logo: cppLogo },
-      // { name: 'Java', logo: javaLogo },
+      { name: 'Java', logo: javaLogo },
       { name: 'Python', logo: pythonLogo },
     ],
   },
@@ -110,34 +126,72 @@ export const SkillsInfo = [
       // { name: 'Compass', logo: mcLogo },
       { name: 'Vercel', logo: vercelLogo },
        { name: 'Netlify', logo: netlifyLogo },
-       
+      { name: 'Docker', logo: dockerLogo },
+      { name: 'AWS', logo: awsLogo },
+      { name: 'IntelliJ IDEA', logo: intellijLogo },
 
       // { name: 'Figma', logo: figmaLogo },
+    ],
+  },
+  {
+    title: 'Backend',
+    skills: [
+      { name: 'REST APIs', logo: postmanLogo },
+      { name: 'JWT', logo: jwtLogo },
+      { name: 'Django', logo: djangoLogo },
+    ],
+  },
+  {
+    title: 'Real-Time & Integrations',
+    skills: [
+      { name: 'Socket.IO', logo: socketioLogo },
+      { name: 'WebSockets', logo: websocketLogo },
+      { name: 'Webhooks', logo: webhookLogo },
+      { name: 'Telnyx API', logo: telnyxLogo },
+      { name: 'AWS SES', logo: awsSesLogo },
+      { name: 'AWS SNS', logo: awsSnsLogo },
+      { name: 'AWS Lambda', logo: awsLambdaLogo },
+      { name: 'AWS S3', logo: awsS3Logo },
     ],
   },
 ];
 
   export const experiences = [
-   {
-  id: 0,
-  img: Techpile,
-  role: "Python Full Stack Summer Trainee",
-  company: "Techpile Technology Pvt. Ltd.",
-  date: "July 2023 – September 2023",
-  desc: "Completed an intensive full stack development internship focused on Python and Django. Developed a Blinkit clone project, implementing real-time product listings, cart management, user authentication, and order functionality. Gained hands-on experience in building scalable web apps using Django, REST APIs, and frontend technologies.",
-  skills: [
-    "Python",
-    "Django",
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "SQLite",
-    "REST API",
-    "Bootstrap"
-  ]
-}
-,
-    
+    {
+      id: 0,
+      img: innostaxLogo,
+      role: "Software Development Engineer – Full Stack",
+      company: "Innostax Software Labs",
+      date: "Sep 2025 – Present",
+      desc: "Working on a production-grade insurance management platform using Java (JAX-RS), React.js, and PostgreSQL. Optimized backend queries with indexing and pagination, improving application performance by 30%. Migrated frontend from React 16 to 18, reducing page load time by 25%. Built end-to-end SMS/MMS and email notification workflows using Telnyx APIs, AWS SES, and AWS SNS/S3, serving 12,000+ users.",
+      skills: [
+        "Java",
+        "React.js",
+        "Node.js",
+        "PostgreSQL",
+        "AWS",
+        "Docker",
+        "REST APIs"
+      ]
+    },
+    {
+      id: 1,
+      img: Techpile,
+      role: "Python Full Stack Summer Trainee",
+      company: "Techpile Technology Pvt. Ltd.",
+      date: "July 2023 – September 2023",
+      desc: "Completed an intensive full stack development internship focused on Python and Django. Developed a Blinkit clone project, implementing real-time product listings, cart management, user authentication, and order functionality. Gained hands-on experience in building scalable web apps using Django, REST APIs, and frontend technologies.",
+      skills: [
+        "Python",
+        "Django",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "SQLite",
+        "REST API",
+        "Bootstrap"
+      ]
+    },
   ];
   
   export const education = [
@@ -218,8 +272,8 @@ degree: "U.P. Board (X) – Science with Computer Application",
   image: chatapp, // replace with actual image import variable
   tags: ["React JS", "Tailwind CSS", "Node.js", "Express", "MongoDB", "Socket.IO"],
   github: {
-    frontend: "https://github.com/AnweshaBhatt475/ChatApp",
-    backend: "https://github.com/AnweshaBhatt475/ChatApp-Backend-code"
+    frontend: "https://github.com/AnweshaBhatt475/Chat-App-frontend",
+    backend: "https://github.com/AnweshaBhatt475/Chat-App-backend"
   },
   webapp: "https://chat-app-pi-nine-97.vercel.app/"
 }

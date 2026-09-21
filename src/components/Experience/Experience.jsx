@@ -11,8 +11,8 @@ const Experience = () => {
       <div className="text-center mb-16">
         <h2 className="text-4xl font-bold text-white">EXPERIENCE</h2>
         <div className="w-32 h-1 bg-purple-500 mx-auto mt-4"></div>
-        <p className="text-gray-400 mt-4 text-lg font-semibold">
-          A showcase of my professional journey, beginning with my role as a Summer Trainee at Techpile Technology Private Limited.
+        <p className="text-gray-400 mt-4 text-lg font-semibold max-w-3xl mx-auto">
+          1+ year of full-stack engineering — from production insurance platforms at Innostax to award-winning internship projects at Techpile.
         </p>
       </div>
 
